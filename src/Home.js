@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import portfolio from './portfolio.JPG';
+import portfolio from './image.png';
+import bg from './bg.jpeg';
 
 function Home() {
   return (
@@ -9,8 +10,8 @@ function Home() {
       <div className='row text-center'>
         <div className=' align col-md-6 pt-5 mt-5 order-lg-1 order-2 '>
           <div className='line'>
-            <span className='name fw-bold'>Karthikeyan</span><br></br>
-            <span className='role fw-bold'>I am a Developer..</span>
+            <span className='name fw-bold justify-content-lg-start justify-content-center d-flex'>Karthikeyan</span>
+            <span className='role fw-bold justify-content-lg-start justify-content-center d-flex'>I am a Developer..</span>
           </div><br></br>
 
           Junior Developer with hands-on-experience in analyzing, designing,
@@ -36,12 +37,14 @@ function Home() {
         
         <div className='col-md-6 d-flex justify-content-lg-end justify-content-center order-lg-2 order-1'>
           <img  style={{
-            height: 500, width: 320
-          }} src={portfolio}></img>
+            height: 500, width: 320,
+         }} src={portfolio}></img>
+          
         </div>
 
       </div>
     </div>
+    
   );
 }
 

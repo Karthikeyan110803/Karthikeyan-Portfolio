@@ -7,6 +7,8 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import About from './about';
+import Experience from './Experience';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
     </Navbar>
     <div className='container-fluid'>
       <Home/>
+      <About/>
+      {/* <Experience/> */}
     </div>
 </>
     

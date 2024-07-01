@@ -17,14 +17,14 @@ a:hover{
 }
 .navbr{
     backdrop-filter:blur(10px);
-    /* z-index: 1; */
+    /* z-index: 1;   */
 }
 .role{
-    font-size: 30px;
+    font-size: 25px;
     /* padding-left: 120px; */
 }
 .name{
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
     
@@ -33,6 +33,16 @@ color:transparent;
 }
 .homecolor{
     font-size: 30px;
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+    
+color:transparent;
+-webkit-background-clip:text;
+
+}
+.abt{
+    font-size: 2.5rem;
+    text-align: justify;
+    
     background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
     
 color:transparent;
