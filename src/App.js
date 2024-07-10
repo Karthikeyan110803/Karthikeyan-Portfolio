@@ -38,7 +38,7 @@ function App() {
     <div className='container-fluid'>
       <Home/>
       <About/>
-      {/* <Experience/> */}
+      <Experience/>
     </div>
 </>
     
