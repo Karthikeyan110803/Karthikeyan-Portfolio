@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home'
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -9,8 +9,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import About from './about';
 import Experience from './Experience';
+import Education from './Education';
+import Skills from './Skills';
+import Projects  from './Projects';
+import Contact from './Contact';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
   return (
 <>
 <Navbar expand="lg" className=" navbr bg-body-tertiary">
@@ -39,6 +50,13 @@ function App() {
       <Home/>
       <About/>
       <Experience/>
+      <Education/>
+      <Skills/>
+      <Projects/>
+      <Contact />
+    
+     
+      
     </div>
 </>
     

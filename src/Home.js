@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import portfolio from './image.png';
 import bg from './bg.jpeg';
+import Aos from 'aos';
 
 function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
 
-    <div className='container pt-5 mt-5'>
+    <div className='container pt-5 mt-5' data-aos="fade-up">
       <div className='row text-center'>
         <div className=' align col-md-6 pt-5 mt-5 order-lg-1 order-2 '>
           <div className='line'>

@@ -1,30 +1,47 @@
+import { useEffect } from 'react';
 import exp from '../src/experienceicon.png';
+import Accordion from 'react-bootstrap/Accordion';
+import Aos from 'aos';
 
 function Experience() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="row mt-5 pt-4 p-3 d-flex">
-      <div className="col-md-6 ">
-        <p className="ex fw-bold  fs-3">Professional Experience</p>
-        <p className='fw-bold'> EdexTech Solutions</p>
-        <p className='fw-bold'>Junior Developer - present</p>
-        <ul>
-            <li>Developing front end website architecture</li>
-            <li>Designing user interactions on web pages</li>
-            <li>Developing back-end website applications</li>
-            <li>Creating servers and databases for functionality</li>
-            <li>Ensuring cross-platform optimization for mobile phones</li>
-            <li>Ensuring responsiveness of applications</li>
-            <li>Seeing through a project from conception to finished product.</li>
-            <li>Designing and developing APIs</li>
-            <li>Meeting both technical and consumer needs.
-            </li>
-          </ul>
-
-        <div className="col-md-6">
-         <img style={{height: 500, width: 500,}} src={exp}></img>
+   
+    <div className='container-fluid mt-5 mb-5 pt-md-5' id='experience' data-aos="fade-up">
+     <div className='abt text-center pb-5 fw-bold'>
+      <p>Professional Experience</p>
+     </div>
+      <div className='container'>
+        <div className='row'>
+        <Accordion defaultActiveKey="0">
+    <Accordion.Item eventKey="0">
+      <Accordion.Header ><p className='fw-bold'>Edex Tech IT Solutions</p>
+      
+      </Accordion.Header>
+      <Accordion.Body>
+      <ul>
+                    <li>Developing front end website architecture</li>
+                    <li>Designing user interactions on web pages</li>
+                    <li>Developing back-end website applications</li>
+                    <li>Creating servers and databases for functionality</li>
+                    <li>Ensuring cross-platform optimization for mobile phones</li>
+                    <li>Ensuring responsiveness of applications</li>
+                    <li>Seeing through a project from conception to finished product.</li>
+                    <li>Designing and developing APIs</li>
+                    <li>Meeting both technical and consumer needs.
+                    </li>
+                  </ul>
+      </Accordion.Body>
+    </Accordion.Item>
+    </Accordion>
         </div>
       </div>
     </div>
+   
+
+
 
   );
 }
